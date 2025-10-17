@@ -1,11 +1,13 @@
 import streamlit as st
 import pickle
 import string
-import nltk
 from nltk.corpus import stopwords
+import nltk
 from nltk.stem.porter import PorterStemmer
+
 nltk.download('punkt')
 nltk.download('stopwords')
+
 
 # -------------------------------
 # 🔧 Setup
@@ -172,3 +174,4 @@ if st.button('🔍 Predict'):
 st.markdown("---")
 
 st.caption("Developed by **Zaid Ansari 💻** | Powered by Machine Learning & Streamlit")
+
