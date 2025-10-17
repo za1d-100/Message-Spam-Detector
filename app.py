@@ -5,14 +5,13 @@ from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
 
+# Download necessary NLTK data
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
-
-# -------------------------------
-# 🔧 Setup
-# -------------------------------
 ps = PorterStemmer()
+
 
 # Streamlit Page Config
 st.set_page_config(
@@ -174,4 +173,5 @@ if st.button('🔍 Predict'):
 st.markdown("---")
 
 st.caption("Developed by **Zaid Ansari 💻** | Powered by Machine Learning & Streamlit")
+
 
